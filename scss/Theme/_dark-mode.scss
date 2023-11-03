@@ -1,0 +1,950 @@
+.dark-mode {
+
+    background: $bg-black-2;
+
+    // header
+    .header {
+
+
+        .container {
+
+
+            .header_left {}
+
+            .header_right {
+
+
+                .search-bar {
+
+
+                    .banner-form {
+
+
+                        .search-input {
+                            color: $color-white-0;
+
+
+                            background: $bg-black-2;
+
+                            border: 1px solid $bg-black-2;
+                        }
+
+                        i {
+
+                            color: $color-grey-2;
+
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+    // about
+    .about {
+        background-color: $bg-black-2;
+
+        .container {
+
+
+            .row {
+                .col-5 {
+
+
+                    h2 {
+                        @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                    }
+                }
+
+                .col-7 {
+                    p {
+                        @include text($color-white-0, $fs-heading-c1, $fw-text);
+
+                    }
+                }
+            }
+        }
+    }
+
+    // about-story
+    .about-story {
+        background: $bg-black-2;
+        .container {
+            .story-heading {
+    
+                
+    
+                h1 {
+                    @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                }
+            }
+    
+            .story-content {
+                margin-top: $margin-40;
+    
+                .row {
+                    .story-item {
+                        
+    
+                        .heading {
+                            h1 {
+                                @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                            }
+                        }
+    
+                        .content {
+                            p {
+                                @include text($color-white-0, $fs-text, $fw-text);
+                            }
+    
+                         
+                        }
+                    }
+                }
+            }
+    
+            .activity {
+                margin-top: $margin-40;
+    
+                .row {
+                    .activity-heading {
+                        h1 {
+                            @include text($color-white-0, $fs-38, $fw-heading-c2);
+                           
+                        }
+                    }
+                }
+    
+                .activity-item {
+                    
+    
+                    p {
+                        margin-top: $margin-4;
+                        @include text($color-white-0, $fs-text, $fw-text);
+                    }
+                }
+            }
+        }
+    }
+
+    // about-skill
+    .about-skill {
+        background: $bg-black-3;
+    
+        .container {
+            .row {
+                .skill-heading {
+                    
+    
+                    h1 {
+                        @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                    }
+    
+                    p {
+                        @include text($color-white-0, $fs-heading-c1, $fw-text);
+                        line-height: 28px;
+                    }
+                }
+    
+                .bar {
+                    .progress-info {
+                        
+                        .progress-title {
+                            @include text($color-white-0, $fs-heading-c1, $fw-0);
+                            margin-bottom: 10px;
+                        }
+    
+                        .progress {
+                          
+                            background-color: $bg-grey-1;
+    
+                           
+                           
+                        }
+                    }
+                }
+    
+               
+            }
+        }
+    }
+
+    // team 
+    .team {
+        background: $bg-black-2;
+    
+        .container {
+            
+    
+            .team-title {
+                
+    
+                h1 {
+                    @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                }
+            }
+    
+            .team-content {
+                .row {
+                    .col-4 {
+                        .team-item {
+                            position: relative;
+                               
+                            &:hover {
+                                .content {
+                                    h3 {
+                                        a {
+                                            @include text($color-orange-0, $fs-2, $fw-0);
+                                        }
+                                    }
+                                }
+    
+                                .team-contact {
+                                    i {
+                                        opacity: 1;
+                                        transition: all .3s ease-in-out;
+    
+                                        &:hover {
+                                            background-color: $bg-color-0;
+                                            color: $color-orange-0;
+                                        }
+                                    }
+    
+                                }
+                            }
+      
+                            .content {
+                                text-align: center;
+                                margin-top: $margin-0;
+    
+                                h3 {
+                                    a {
+                                        @include text($color-white-0, $fs-2, $fw-0);
+                                        text-decoration: none;
+    
+                                    }
+                                }
+    
+                                p {
+                                    color: $color-white-0;
+                                }
+                            }
+    
+                            .team-contact {
+                                position: absolute;
+                                top: 290px;
+                                left: 120px;
+    
+                                i {
+                                    margin: 0 10px;
+                                    background-color: rgba(157, 157, 157, 0.5);
+                                    ;
+                                    color: $color-white-0;
+                                    padding: $padding-0;
+                                    border-radius: $border-radius-5;
+                                    opacity: 0;
+    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // resto
+    .resto {
+
+
+        .container-fluid {
+            .row {
+
+
+                .resto-right {
+
+
+                    .resto-content {
+
+
+                        h3.title-level2 {
+                            color: $color-grey-2;
+                        }
+
+
+
+                        .resto-subcribe {
+
+
+                            .subscribe-content {
+
+
+                                a {
+                                    color: $color-white-0;
+
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // category
+    .category {
+        background: $bg-black-3;
+
+
+        .container {
+
+
+            .category-title {
+
+
+                h3.title-level2 {
+                    @include text($color-white-0, $fs-heading-c2 - 2, $fw-heading-c2);
+                    line-height: $line-height-48;
+                    margin-bottom: $margin-2;
+                }
+            }
+
+
+        }
+    }
+
+    // menu
+    .menu {
+        background: $bg-black-2;
+
+        .container {
+            .menu-item {
+
+                border: 1px solid $bg-black-1;
+
+
+                .item-heading {
+
+
+                    .info {
+                        p {
+                            color: $color-white-0;
+                        }
+
+                        h4 {
+                            transition: all 0.3s ease-in-out;
+                            color: $color-white-0;
+
+                            &:hover {
+                                color: $color-orange-0;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    p {
+                        color: $color-white-0;
+                    }
+                }
+
+                &:hover {
+                    .icon {
+                        background-color: $bg-orange;
+
+                        span {
+                            color: $color-white-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // stats
+    .stats {
+        background: $bg-black-2;
+
+
+        .container {
+            .stats-content {
+                .row {
+                    div {
+                        .stats-count {
+                            background-color: $bg-black-2;
+                            border: 1px solid $color-grey-1;
+                            transition: all .3s ease-in-out;
+
+                            &:hover {
+                                transform: translateY(-0.25rem);
+                                box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+                            }
+
+
+                            .counter {
+                                color: $color-white-0;
+
+                            }
+
+                            .count-text {
+                                color: $color-white-0;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // video
+    .video {
+        background: $bg-black-2;
+
+    }
+
+    // blog 
+    .post {
+        background: $bg-black-3;
+
+        .container {
+            .post-title {
+
+
+                h1 {
+                    @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                }
+            }
+
+            .post-content {
+                .row {
+                    .post-item {
+                        .card {
+                            background-color: $bg-black-2;
+                            border: 1px solid $color-grey-3;
+
+
+
+                            .card-body {
+                                padding: 0 $padding-20;
+
+
+                                .card-title {
+                                    h3 {
+                                        @include text($color-white-0, $fs-2, $fw-heading-c2);
+                                    }
+
+                                    p {
+
+
+
+                                        @include text($color-white-0, $fs-text, $fw-text);
+                                    }
+                                }
+                            }
+
+                            .card-footer {
+                                background-color: $bg-black-2;
+
+
+                                .row {
+                                    .col-8 {
+                                        .people {
+
+
+                                            a {
+
+                                                color: $color-white-0;
+
+                                            }
+                                        }
+                                    }
+
+                                    .col-4 {
+                                        .readmore {
+                                            @include text($color-white-0, $fs-0, $fw-0);
+                                            opacity: 0.9;
+                                            transition: all 0.3s ease-in-out;
+
+                                            letter-spacing: .02em;
+
+                                            &:hover {
+                                                color: $color-orange-0;
+                                            }
+
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // plan
+    .plan {
+        background: $bg-black-2;
+        .container {
+            .plan-heading {
+                
+    
+                h1 {
+                    @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                }
+            }
+    
+            .plan-content {
+                .plan-item {
+                    padding: 0 $padding-20 + 10;
+    
+                    .disk {
+                        .border-dot {
+                            
+    
+                            .menu-item-name {
+                                h6 {
+                                    color: $color-white-0
+                                }
+                            }
+    
+                            
+                        }
+    
+                        .disk-description {
+                            p {
+                                color: $color-white-0;
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blog {
+        background-color: $bg-black-3;
+    
+        .container {
+            .blog-title {
+                
+    
+                h1 {
+                    @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                }
+            }
+    
+            .blog-content {
+                .blog-left {
+                    .row {
+                        .item {
+                            .card {
+                                background-color: $bg-black-3;
+                                border: none;
+    
+                                .card-body {
+                                    background-color: $bg-black-3;
+    
+                                    .card-title {
+                                        h3 {
+                                            @include text($color-white-0, $fs-2, $fw-heading-c2);
+                                        }
+    
+                                        p {
+
+                                            @include text($color-white-0, $fs-text, $fw-text);
+                                        }
+                                    }
+                                }
+    
+                                .card-footer {
+                                    background-color: $bg-black-3;
+    
+                                    .row {
+                                        .col-8 {
+                                            .people {
+                                               
+    
+                                                a {
+                                                    text-decoration: none;
+                                                    color: $color-white-0;
+                                                    font-weight: $fw-0;
+                                                    padding-left: 10px;
+                                                }
+                                            }
+                                        }
+    
+                                        .col-4 {
+                                            .readmore {
+                                                @include text($color-white-0, $fs-0, $fw-0);
+                                                opacity: 0.9;
+                                                letter-spacing: .02em;
+                                                transition: all .3s ease-in-out;
+    
+                                                &:hover {
+                                                    color: $color-orange-0;
+                                                }
+    
+                                                span {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .pagination-wrapper {
+                            .page-pagination {
+                                li {
+                                    
+    
+                                    a {
+                                        text-decoration: none;
+                                        color: $color-grey-0;
+                                        transition: all .3s ease-in-out;
+                                    }
+    
+                                    &:nth-child(1) {
+                                        background-color: $bg-orange;
+                                        border: none;
+                                        .current {
+                                            color: $color-white-0;
+                                        }
+                                    }
+    
+                                    &:hover {
+                                        border-color: $color-orange-0;
+                                        a {
+                                            color: $color-orange-0;
+                                        }
+
+                                    }
+                                }
+    
+                                
+                            }
+                        }
+                    }
+                }
+    
+                .blog-right {
+                    background-color: $bg-black-3;
+    
+                    .sticky {
+                        
+                        .popular-post {
+                            background-color: $bg-black-3;
+                            margin-top: 45px;
+    
+                            .sidebar-title {
+                                .title-left {
+                                    color: $color-white-0;
+                                }
+    
+                                .row {
+                                    .col-6 {
+                                        .post-recipe {
+                                            .post-thumb {
+                                              
+    
+                                                .text-small {
+                                                    
+                                                    @include text($color-white-0, $fs-heading-c1, $fw-0);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                            }
+                        }
+        
+                        
+                    }
+    
+                    .sidebar {
+                        background: $bg-black-3;
+                        .post {
+                            .row {
+                                .col-7 {
+                                    a {
+                                        color: $color-white-0;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.blog-category {
+                            background: $bg-black-3;
+
+                            .title-left {
+                                color: $color-white-0;
+                            }
+
+                            .blog-cat {
+                                li {
+                                    color: $color-white-0;
+                                    a {
+                                        color: $color-white-0;
+                                    }
+                                }
+                            }
+                        }
+
+                        h3.title-left {
+                            color: $color-white-0;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+
+    // testimonials
+    .testimonials {
+        background: $bg-black-2;
+
+        .container {
+            .testimonials-title {
+
+
+                h3.title-level2 {
+                    @include text($color-white-0, $fs-heading-c2 - 2, $fw-heading-c2);
+
+                }
+            }
+
+            .testimonials-slider {
+                .testimonials-carousel {
+
+
+                    .myItem {
+                        .testimonials-content {
+
+
+
+
+                            blockquote {
+                                margin: 0 0 1rem;
+
+                                q {
+                                    @include text($color-white-0, $fs-2, $fw-heading-c2);
+
+
+                                    &::before {
+                                        font-size: $fs-1 - 4;
+                                        color: $color-orange-0;
+                                        display: block;
+                                        font-family: initial;
+                                    }
+                                }
+                            }
+
+                            p {
+                                color: $color-white-0;
+                                font-size: $fs-0 + 2;
+                                line-height: $line-height-0;
+                            }
+
+                            .testimonials-text {
+                                h3 {
+                                    color: $color-white-0;
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .error {
+        background: $bg-black-2;
+        .container {
+            .error-content {
+                
+    
+                h1 {
+                 color: $color-white-0;
+                }
+    
+                h2 {
+                    @include text($color-white-0, $fs-2 + 4, $fw-heading-c2);
+                }
+    
+                p {
+                    color: $color-white-0;
+                }
+    
+                .error-form {
+
+                    .error-control {
+                        @include text($color-black-1, $fs-0 + 2, $fw-1);
+                        background: $bg-black-3;  
+
+                        &:focus {
+                            border: 1px solid $color-orange-0;
+                        }
+                    }
+    
+                   
+                }
+    
+                a {
+                    @include text($color-white-0, $fs-0 + 2, $fw-0);
+                    text-decoration: none;
+                    display: block;
+                    margin-top: $margin-40 + 8;
+    
+                    &:hover {
+                        color: $color-orange-0;
+                    }
+    
+                    i {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        background: $bg-black-2;
+    
+        .container {
+            
+    
+            .contact-title {
+
+    
+                h1 {
+                    @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                }
+    
+                p {
+                    color: $color-white-0;
+                }
+            }
+    
+            .contact-content {
+                .row {
+                    .form-control {
+                        background-color: $bg-black-3;
+                        
+                        &::placeholder {
+                            color: $color-grey-1;
+                        }
+                        &:focus {
+                            border: 1px solid $color-orange-0;
+                        }
+                    }
+    
+                    textarea.form-control {
+                        background-color: $bg-black-3;
+    
+                        &:focus {
+                            border: 1px solid $bg-orange;
+
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .map {
+        background: $bg-black-2;
+    
+        .container {
+            padding-bottom: $padding-48;
+    
+            .row {
+                .map-left {
+                    .map-title {
+                        
+    
+                        h1 {
+                            @include text($color-white-0, $fs-heading-c2, $fw-heading-c2);
+                        }
+                    }
+    
+                    .map-info {
+                        .info-item {
+                            .col-1 {
+                                span {
+                                    color: $color-orange-0;
+                                }
+                            }
+    
+                            .col-11 {
+                                letter-spacing: 1px;
+    
+                                h5 {
+                                    color: $color-white-0;
+                                }
+    
+                                p {
+                                    
+    
+                                    a {
+                                        color: $color-white-0;
+                                    }
+                                }
+                            }
+                        }
+    
+    
+                    }
+                }
+            }
+        }
+    }
+
+    // footer
+    .footer {
+
+
+        .container {
+            padding: $padding-24 $padding-14 + 1;
+
+            .footer-top {
+                .footer-list:nth-child(1) {
+                    .footer-social {
+                        a {
+                            background: $bg-black-3;
+                            transition: all .3s ease-in-out;
+
+                            &:hover {
+                                background: $bg-orange;
+
+                                i {
+                                    color: $color-white-0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-list:nth-child(4) {
+                    form {
+                        input {
+                            background: $bg-black-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

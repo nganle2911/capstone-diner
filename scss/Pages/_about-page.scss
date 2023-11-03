@@ -1,0 +1,137 @@
+.about-story {
+    .container {
+        .story-heading {
+
+            h3 {
+                @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+            }
+        }
+
+        .story-content {
+            margin-top: $margin-40;
+
+            .row {
+                .story-item {
+                    img {
+                        border-radius: $border-radius-0;
+                    }
+
+                    .heading {
+                        h1 {
+                            @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+                        }
+                    }
+
+                    .content {
+                        p {
+                            @include text($color-black-1, $fs-text, $fw-text);
+                        }
+
+                        .contact-btn {
+                            button {
+                                padding: 12px 45px;
+                                border: 2px solid $color-orange-0 ;
+                                border-radius: $border-radius-0;
+                                @include text($color-white-0, $fs-0, $fw-0);
+                                background-color: $color-orange-0;
+                                transition: all .3s ease-in-out;
+
+                                &:hover {
+                                    background-color: #ff6600;
+                                    border: 2px solid #ff6600;
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .activity {
+            margin-top: $margin-40;
+
+            .row {
+                .activity-heading {
+                    h1 {
+                        @include text($color-black-0, $fs-38, $fw-heading-c2);
+                        line-height: $line-height-48;
+                    }
+                }
+            }
+
+            .activity-item {
+                h3 {
+                    @include text($color-orange-0, $fs-20, $fw-heading-c2);
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: $color-yellow-0;
+                    }
+
+                }
+
+                p {
+                    margin-top: $margin-4;
+                    @include text($color-black-0, $fs-text, $fw-text);
+                }
+            }
+        }
+    }
+}
+
+.about-skill {
+    background-color: $bg-grey-1;
+
+    .container {
+        .row {
+            .skill-heading {
+                h3 {
+                    @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                    font-family: 'Pacifico', cursive;
+                    letter-spacing: 1px;
+                }
+
+                h1 {
+                    @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+                }
+
+                p {
+                    @include text($color-grey-0, $fs-heading-c1, $fw-text);
+                    line-height: 28px;
+                }
+            }
+
+            .bar {
+                .progress-info {
+                    margin-bottom: $margin-15 + 5;
+                    .progress-title {
+                        @include text($color-black-0, $fs-heading-c1, $fw-0);
+                        margin-bottom: 10px;
+                    }
+
+                    .progress {
+                        height: 0.4rem;
+                        background-color: $bg-black-1;
+
+                        .progress-bar {
+                            background-image: none;
+                            height: 0.4rem;
+                            background-color: $color-orange-0;
+                        }
+                    }
+                }
+            }
+
+            .thumbnail {
+                border-radius: $border-radius-0;
+            }
+        }
+    }
+}

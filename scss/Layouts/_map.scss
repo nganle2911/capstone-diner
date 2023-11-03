@@ -1,0 +1,66 @@
+.map {
+    padding: $padding-48 0;
+
+    .container {
+        padding-bottom: $padding-48;
+
+        .row {
+            .map-left {
+                .map-title {
+                    h3 {
+                        @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                        font-family: 'Pacifico', cursive;
+                        letter-spacing: 1px;
+                    }
+
+                    h1 {
+                        @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+                    }
+                }
+
+                .map-info {
+                    .info-item {
+                        .col-1 {
+                            span {
+                                color: $color-orange-0;
+                            }
+                        }
+
+                        .col-11 {
+                            letter-spacing: 1px;
+
+                            h5 {
+                                font-weight: $fw-heading-c2;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                line-height: 28px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #777575;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            .map-right {
+                background-color: rgba(130, 115, 252, .05);
+                border-radius: $border-radius-0;
+
+                .map-iframe {
+
+                    iframe {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

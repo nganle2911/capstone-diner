@@ -1,0 +1,77 @@
+.error {
+    .container {
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+
+            h1 {
+                font-size: $fs-130;
+                font-weight: $fw-0;
+                color: $color-black-0;
+                letter-spacing: 5px;
+
+                i {
+                    font-size: $fs-130 - 20;
+                }
+            }
+
+            h2 {
+                @include text($color-black-0, $fs-2 + 4, $fw-heading-c2);
+                margin-bottom: $margin-4 + 2;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: $fs-0 + 2;
+                line-height: $line-height-0;
+                color: $color-black-1;
+            }
+
+            .error-form {
+                position: relative;
+                max-width: 500px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+
+                .error-control {
+                    @include text($color-black-1, $fs-0 + 2, $fw-1);
+                    padding: $padding-0 $padding-120 $padding-0 $padding-24 + 1;
+                    border-radius: $border-radius-0;
+                    background: $bg-grey-1;
+                    line-height: $line-height-0;
+                    height: 55px;
+                    border: 1px solid $color-grey-3;
+                    margin-right: $margin-15 + 20;
+
+                }
+
+                .btn-orange {
+                    font-size: $fs-0 + 2;
+                    font-weight: $fw-heading-c2;
+                    padding: $padding-0 $padding-40;
+
+                    &:hover {
+                        color: $color-white-0;
+                        background-color: $bg-orange;
+                        border: 2px solid $bg-orange;
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            a {
+                @include text($color-black-0, $fs-0 + 2, $fw-0);
+                text-decoration: none;
+                display: block;
+                margin-top: $margin-40 + 8;
+
+                &:hover {
+                    color: $color-orange-0;
+                }
+
+                i {}
+            }
+        }
+    }
+}

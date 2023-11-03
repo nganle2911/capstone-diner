@@ -1,0 +1,104 @@
+.resto {
+    background: $bg-orange;
+
+    .container-fluid {
+        .row {
+            .resto-left {
+                padding: 0;
+                position: relative;
+
+                .photo {
+                    background: url(../../img/banner3.jpeg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    // min-height: 600px;
+                    height: 100%;
+                }
+
+                &::before {
+                    content: "";
+                    background: rgb(16 15 19 / 46%);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    min-height: 100%;
+                }
+            }
+
+            .resto-right {
+                padding: $padding-16 $padding-24;
+
+                .resto-content {
+                    padding: $padding-48;
+
+                    h6.font-bunny {
+                        font-family: "Pacifico", cursive;
+                        @include fontBunny($fs-20, $fw-heading-c1, $line-height-0 + 2, 1px, $color-white-0);
+                    }
+
+                    h3.title-level2 {
+                        font-size: $fs-heading-c2 - 2;
+                        line-height: $line-height-48;
+                        font-weight: $fw-heading-c2;
+                    }
+
+                    p {
+                        margin: $margin-3 0;
+                        color: $color-orange-1;
+                        font-size: $fs-heading-c1;
+                        line-height: $line-height-0;
+                    }
+
+                    .resto-subcribe {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 30px;
+                        margin-top: $margin-2;
+
+                        .subscribe-content {
+                            transition: all .4s ease-in-out;
+
+                            .subscribe-icon {
+                                background: $bg-color-0;
+                                width: 70px;
+                                height: 70px;
+                                line-height: $line-height-70;
+                                text-align: center;
+                                border-radius: $border-radius-0;
+                                margin-bottom: $margin-0;
+
+                                i {
+                                    color: $color-orange-0;
+                                    font-size: $fs-25;
+                                    line-height: $line-height-70;
+                                }
+                            }
+
+                            &:hover {
+                                i {
+                                    color: $color-yellow-0;
+                                }
+                            }
+
+                            a {
+                                color: $color-black-0;
+                                text-decoration: none;
+                                font-weight: $fw-0;
+                                line-height: 1.2;
+                                font-size: $fs-20;
+                                margin-bottom: $margin-3 - 1;
+                            }
+
+                            p {
+                                margin-top: $margin-3 - 8;
+                                color: $color-orange-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

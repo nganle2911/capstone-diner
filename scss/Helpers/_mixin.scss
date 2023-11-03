@@ -1,0 +1,26 @@
+@mixin styleButton($color, $bg-color, $border-color, $font-size, $font-weight, $padding-y, $padding-x, $border-radius) {
+    color: $color;
+    background-color: $bg-color;
+    border: 2px solid $border-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    padding: $padding-y $padding-x;
+    border-radius: $border-radius;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@mixin text($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin fontBunny($font-size, $font-weight, $line-height, $letter-spacing, $color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}

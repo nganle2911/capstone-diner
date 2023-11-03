@@ -1,0 +1,23 @@
+// Button white 
+.btn-white {
+    @include styleButton($color-white-0, transparent, $bg-color-0, $fs-0, $fw-0, $padding-0, $padding-1, $border-radius-0);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        @include styleButton($color-orange-0, $bg-color-0, $bg-color-0, $fs-0, $fw-0, $padding-0, $padding-1, $border-radius-0);
+    }
+} 
+
+// Button orange 
+.btn-orange {
+    @include styleButton($color-white-0, $bg-orange, transparent, $fs-0, $fw-0, $padding-0, $padding-1, $border-radius-0);
+    transition: .3s ease-in;
+
+    &:hover {
+        color: $color-white-0;
+        background-color: $bg-orange;
+        border: 2px solid $bg-orange;
+        opacity: 0.8;
+    }
+}

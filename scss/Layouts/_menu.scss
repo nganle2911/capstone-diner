@@ -1,0 +1,48 @@
+.menu {
+    .container {
+        .menu-item {
+            padding: $padding-40;
+            border: 1px solid $border-light;
+            box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+            border-radius: $border-radius-0;
+
+            .item-heading {
+                .icon {
+                    background-color: $bg-light;
+                    border-radius: $border-radius-0;
+                    width: $width-70;
+                    height: $height-70;
+                    line-height: $line-height-70 + 10;
+                    text-align: center;
+                    transition: all 0.3s ease-in-out;
+
+                    span {
+                        font-size: $fs-25;
+                        color: $color-orange-0;
+                    }
+                }
+
+                .info {
+                    padding-left: $padding-16;
+
+                    h4 {
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            color: $color-orange-0;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .icon {
+                    background-color: $bg-orange;
+                    
+                    span {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

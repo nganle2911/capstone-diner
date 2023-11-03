@@ -1,0 +1,282 @@
+.blog {
+    background-color: $bg-grey-1;
+
+    .container {
+        .blog-title {
+            text-align: center;
+            margin-bottom: $margin-40;
+
+            h3 {
+                @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+            }
+        }
+
+        .blog-content {
+            .blog-left {
+                .row {
+                    .item {
+                        .card {
+                            background-color: $bg-grey-1;
+
+                            border: none;
+
+                            .card-header {
+                                padding: 0;
+                                overflow: hidden;
+                                position: relative;
+
+                                a {
+                                    img {}
+                                }
+
+                                .post-extend {
+                                    position: absolute;
+                                    bottom: 12px;
+                                    left: 44px;
+                                    color: white;
+
+                                    a {
+
+
+                                        text-decoration: none;
+                                        padding: 3px 20px;
+                                        background-color: $color-orange-0;
+                                        border-radius: $border-radius-35 ;
+
+                                        @include text($color-white-0, $fs-12, $fw-0);
+                                    }
+
+                                    span {
+                                        span {
+                                            @include text($color-white-0, $fs-15, $fw-text);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .card-body {
+                                background-color: $bg-grey-1;
+
+                                padding: 0;
+                                margin: $margin-0 0;
+
+                                .card-title {
+                                    h3 {
+                                        @include text(#232121, $fs-2, $fw-heading-c2);
+                                    }
+
+                                    p {
+
+
+                                        line-height: 28px;
+                                        font-family: 'Quicksand', sans-serif;
+                                        @include text(rgba(22, 28, 45, 0.7), $fs-text, $fw-text);
+                                    }
+                                }
+                            }
+
+                            .card-footer {
+                                background-color: $bg-grey-1;
+
+                                border: none;
+                                padding: 0;
+
+                                .row {
+                                    .col-8 {
+                                        .people {
+                                            a {
+
+                                                img {
+                                                    width: 40px;
+                                                    height: 40px;
+                                                    border-radius: 50%;
+                                                }
+                                            }
+
+                                            a {
+                                                text-decoration: none;
+                                                color: #232121;
+                                                font-weight: $fw-0;
+                                                padding-left: 10px;
+                                            }
+                                        }
+                                    }
+
+                                    .col-4 {
+                                        .readmore {
+                                            @include text(#232121, $fs-0, $fw-0);
+                                            opacity: 0.9;
+                                            letter-spacing: .02em;
+                                            transition: all .3s ease-in-out;
+
+                                            &:hover {
+                                                color: $color-orange-0;
+                                            }
+
+                                            span {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .pagination-wrapper {
+                        .page-pagination {
+                            li {
+                                list-style: none;
+                                display: inline;
+                                background-color: transparent;
+                                padding: 8px 16px;
+                                border: 1px solid $color-grey-3;
+                                border-radius: $border-radius-0;
+                                font-weight: $fw-0;
+                                transition: all .3s ease-in-out;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $color-grey-0;
+                                }
+
+                                &:nth-child(1) {
+                                    background-color: $bg-orange;
+                                    .current {
+                                        color: $color-white-0;
+                                    }
+                                }
+
+                                &:hover {
+                                    border-color: $color-orange-0;
+                                }
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+
+            .blog-right {
+                background-color: $bg-grey-1;
+
+                .sticky {
+                    .popular-post {
+                        background-color: $bg-grey-1;
+                        margin-top: 45px;
+
+                        .sidebar-title {
+                            .title-left {
+                                font-size: 26px;
+                                font-weight: $fw-heading-c2;
+                            }
+
+                            .row {
+                                .col-6 {
+                                    .post-recipe {
+                                        .post-thumb {
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                                border-radius: $border-radius-0;
+                                            }
+
+                                            .text-small {
+                                                display: block;
+                                                line-height: 22px;
+                                                margin-top: 10px;
+                                                @include text($color-black-0, $fs-heading-c1, $fw-0);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .popular-post {
+                        .sidebar-title {
+                            .title-left {}
+                        }
+
+                        .post {
+                            padding: 0;
+
+                            .row {
+                                .post-thumb {
+                                    img {
+                                        border-radius: $border-radius-0;
+                                    }
+                                }
+
+                                .col-7 {
+                                    padding-top: 66px;
+
+                                    a {
+                                        text-decoration: none;
+
+                                        line-height: 28px;
+                                        display: inline-block;
+                                        margin-bottom: 10px;
+
+                                        @include text($color-black-0, $fs-text, $fw-0);
+                                    }
+
+                                    .post-info {}
+                                }
+                            }
+                        }
+                    }
+
+                    .blog-category {
+                        background: $bg-grey-1;
+
+                        .sidebar-title {
+
+                            .title-left {
+                                font-size: 26px;
+                                font-weight: $fw-heading-c2;
+                            }
+                        }
+
+                        .blog-cat {
+
+                            li {
+                                list-style: square;
+                                @include text($color-black-1, $fs-text, 500);
+
+                                a {
+                                    text-decoration: none;
+                                    @include text($color-black-1, $fs-text, 500);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .sidebar {
+                    background: $bg-grey-1;
+
+                    .sidebar-title {
+
+                        .title-left {
+                            font-size: 26px;
+                            font-weight: $fw-heading-c2;
+                        }
+
+                        a {
+                            img {}
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

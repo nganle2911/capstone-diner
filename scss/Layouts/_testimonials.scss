@@ -1,0 +1,92 @@
+.testimonials {
+    padding-top: $padding-48;
+
+    .container {
+        .testimonials-title {
+            h6.font-bunny {
+                font-family: "Pacifico", cursive;
+                @include fontBunny($fs-20, $fw-heading-c1, $line-height-0 + 2, 1px, $color-orange-0);
+                margin-bottom: 0;
+            }
+
+            h3.title-level2 {
+                @include text($color-black-0, $fs-heading-c2 - 2, $fw-heading-c2);
+                line-height: $line-height-48;
+                margin-bottom: $margin-2;
+            }
+        }
+
+        .testimonials-slider {
+            .testimonials-carousel {
+                position: relative;
+                overflow: hidden;
+
+                .myItem {
+                    .testimonials-content {
+                        max-width: 700px;
+                        margin: auto;
+
+                        .testimonials-photo {
+                            width: 85px;
+                            height: 85px;
+                            overflow: hidden;
+                            left: 0;
+                            top: 0;
+                            border-radius: 50%;
+                            display: block;
+                            margin: auto;
+                            margin-bottom: $margin-15 + 5;
+                        }
+
+                        blockquote {
+                            margin: 0 0 1rem;
+
+                            q {
+                                @include text($color-black-0, $fs-2, $fw-heading-c2);
+                                line-height: $line-heigh-36;
+                                font-style: italic;
+                                letter-spacing: 1px;
+
+                                &::before {
+                                    font-size: $fs-1 - 4;
+                                    color: $color-orange-0;
+                                    display: block;
+                                    font-family: initial;
+                                }
+                            }
+                        }
+
+                        p {
+                            color: $color-black-1;
+                            font-size: $fs-0 + 2;
+                            line-height: $line-height-0;
+                        }
+
+                        .testimonials-text {
+                            h3 {
+                                font-weight: $fw-heading-c2;
+                                font-size: $fs-20;
+                            }
+
+                            p {
+                                font-size: $fs-0 + 2;
+                                font-style: normal;
+                                margin-bottom: 0;
+                                opacity: 0.8;
+                                margin-top: $margin-4 - 4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: $bg-orange;
+}

@@ -1,0 +1,87 @@
+.contact {
+    padding: $padding-48 0;
+
+    .container {
+        padding: $padding-48 0;
+
+        .contact-title {
+            text-align: center;
+
+            h3 {
+                @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+            }
+
+            p {
+                font-size: $fs-heading-c1;
+                line-height: $line-height-0;
+                color: rgba(22, 28, 45, 0.7);
+            }
+        }
+
+        .contact-content {
+            .row {
+                .form-control {
+                    background-color: $bg-grey-1;
+                    margin-bottom: $margin-0;
+                    font-size: $fs-heading-c1;
+                    padding: $padding-0 $padding-20;
+                    line-height: $line-height-0;
+                    width: 100%;
+                    border: 1px solid transparent;
+                    border-radius: $border-radius-0;
+                
+                    &:focus {
+                        outline: none;
+                        border: 1px solid $bg-orange;
+                        background: $bg-color-0;
+                        box-shadow: none;
+                    }
+                }
+
+                textarea.form-control {
+                    background-color: $bg-grey-1;
+                    margin-bottom: $margin-0;
+                    font-size: $fs-heading-c1;
+                    padding: $padding-0 $padding-20;
+                    line-height: $line-height-0;
+                    width: 100%;
+                    border: 1px solid transparent;
+                    border-radius: $border-radius-0;
+                    min-height: 200px;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid $bg-orange;
+                        background: $bg-color-0;
+                        box-shadow: none;
+                    }
+                }
+
+            }
+        }
+
+        .contact-btn {
+            text-align: right;
+
+            button {
+                padding: 12px 45px;
+                border: 2px solid $color-orange-0 ;
+                border-radius: $border-radius-0;
+                @include text($color-white-0, $fs-0, $fw-0);
+                background-color: $color-orange-0;
+
+                &:hover {
+                    background-color: #ff6600;
+                    border: 2px solid #ff6600;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

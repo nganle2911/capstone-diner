@@ -1,0 +1,51 @@
+.plan {
+    .container {
+        .plan-heading {
+            h3 {
+                @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+            }
+        }
+
+        .plan-content {
+            .plan-item {
+                padding: 0 $padding-20 + 10;
+
+                .disk {
+                    .border-dot {
+                        margin-left: 0;
+                        margin-right: 10px;
+                        border-bottom: 2px dotted #bbb;
+
+                        .menu-item-name {
+                            h6 {
+                                font-size: $fs-20;
+                                font-weight: $fw-heading-c2;
+                            }
+                        }
+
+                        .menu-item-price {
+                            h6 {
+                                @include text($color-orange-0, $fs-20, $fw-heading-c2);
+                            }
+                        }
+                    }
+
+                    .disk-description {
+                        p {
+                            margin-top: 10px;
+                            font-size: $fs-heading-c1;
+                            line-height: $line-height-0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

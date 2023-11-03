@@ -1,0 +1,92 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+
+    .container {
+        margin: $margin-0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header_left {
+            .logo {
+                color: $color-white-0;
+                font-weight: $fw-0;
+                font-size: $fs-38 - 2;
+            }
+        }
+
+        .header_right {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            .search-bar {
+                display: flex;
+                margin-right: $margin-1;
+
+                .banner-form {
+                    position: relative;
+
+                    .search-input {
+                        padding: $padding-0 - 2 $padding-48 + 2 $padding-0 - 2 $padding-20;
+                        height: 45px;
+                        font-size: $fs-0;
+                        color: $color-black-1;
+                        font-weight: $fw-heading-c1;
+                        border-radius: $border-radius-0;
+                        background: $bg-color-0;
+                        outline: 0;
+                        border: 1px solid $bg-color-0;
+                    }
+
+                    i {
+                        position: absolute;
+                        right: 20px;
+                        top: 15px;
+                        color: $color-black-1;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .mode-icon {
+                margin-right: $margin-1;
+
+                a {
+                    i {
+                        font-size: $fs-25;
+                        color: $color-white-0;
+                    }
+                }
+            }
+
+            .button_nav {
+                .button_nav {
+                    background-color: transparent;
+                    border: none;
+                    font-size: $fs-25;
+                    padding: $padding-0 - 6 0;
+                }
+
+                .dropdown-menu {
+                    .dropdown-item {
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background: $bg-orange;
+                            color: $bg-color-0;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

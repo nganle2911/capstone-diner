@@ -1,0 +1,152 @@
+.post {
+    background-color: $bg-grey-1;
+    padding: 100px 0;
+
+    .container {
+        .post-title {
+            text-align: center;
+            margin-bottom: $margin-2;
+
+            h3 {
+                @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+            }
+        }
+
+        .post-content {
+            .row {
+                .post-item {
+                    .card {
+                        background-color: $bg-grey-1;
+                        border: none;
+
+                        .card-header {
+                            padding: 0;
+                            overflow: hidden;
+                            position: relative;
+
+                            a {
+                                img {}
+                            }
+
+                            .post-extend {
+                                position: absolute;
+                                bottom: 12px;
+                                left: 20px;
+                                color: white;
+
+
+                                .reciepe {
+                                    text-decoration: none;
+                                    padding: 3px 20px;
+                                    background-color: $color-orange-0;
+                                    border-radius: $border-radius-35;
+                                    @include text($color-white-0, $fs-15, $fw-0);
+                                    transition: all 0.3s ease-in-out;
+
+                                    &:hover {
+                                        background-color: $bg-color-0;
+                                        color: $color-orange-0;
+                                    }
+                                }
+
+                                .time-info {
+                                    background-color: $color-white-0;
+                                    margin-left: $margin-180 - 15;
+                                    color: $color-orange-0;
+                                    padding: 3px 10px;
+                                    align-items: center;
+                                    border-radius: $border-radius-35;
+                                    transition: all 0.3s ease-in-out;
+
+                                    span {
+                                        @include text($color-orange-0, $fs-12, $fw-text);
+                                        transition: all 0.3s ease-in-out;
+                                    }
+
+                                    &:hover {
+                                        background-color: $bg-orange;
+                                        color: $color-white-0;
+
+                                        span {
+                                            color: $color-white-0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-body {
+
+                            padding: 0;
+                            margin: $margin-0 0;
+
+                            .card-title {
+                                h3 {
+                                    @include text(#232121, $fs-2, $fw-heading-c2);
+                                }
+
+                                p {
+
+
+                                    line-height: 28px;
+                                    font-family: 'Quicksand', sans-serif;
+                                    @include text(rgba(22, 28, 45, 0.7), $fs-text, $fw-text);
+                                }
+                            }
+                        }
+
+                        .card-footer {
+                            background-color: $bg-grey-1;
+                            border: none;
+                            padding: 0;
+
+                            .row {
+                                .col-8 {
+                                    .people {
+                                        a {
+
+                                            img {
+                                                width: 40px;
+                                                height: 40px;
+                                                border-radius: 50%;
+                                            }
+                                        }
+
+                                        a {
+                                            text-decoration: none;
+                                            color: #232121;
+                                            font-weight: $fw-0;
+                                            padding-left: 10px;
+                                        }
+                                    }
+                                }
+
+                                .col-4 {
+                                    .readmore {
+                                        @include text(#232121, $fs-0, $fw-0);
+                                        opacity: 0.9;
+                                        transition: all 0.3s ease-in-out;
+
+                                        letter-spacing: .02em;
+
+                                        &:hover {
+                                            color: $color-orange-0;
+                                        }
+
+                                        span {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

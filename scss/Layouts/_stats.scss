@@ -1,0 +1,170 @@
+.mouth {
+    background: url(../../img/banner2.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        background: rgb(16 15 19 / 66%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .container {
+
+        .mouth-content {
+            max-width: 700px;
+            margin: 0 auto;
+
+            .mouth-title {
+                margin-bottom: 0;
+                @include text($color-white-0, $fs-45, $fw-heading-c2);
+                max-width: 800px;
+            }
+
+            .mouth-buttons {
+                padding-bottom: $padding-48;
+
+                a.btn-white {
+                    margin-right: $margin-0;
+
+                    i {}
+                }
+
+                a.btn-orange {
+                    i {}
+                }
+            }
+        }
+    }
+}
+
+.stats {
+    margin-top: $margin-70;
+    z-index: 10;
+    position: relative;
+
+    .container {
+        .stats-content {
+            .row {
+                div {
+                    .stats-count {
+                        background-color: $bg-color-0;
+                        padding: $padding-40 $padding-20;
+                        box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+                        border-radius: $border-radius-0;
+                        text-align: center;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            transform: translateY(-0.25rem);
+                            box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+                        }
+
+                        i {
+                            background: $bg-orange;
+                            color: $color-white-0;
+                            width: 68px;
+                            height: 68px;
+                            line-height: $line-height-70 - 2;
+                            text-align: center;
+                            border-radius: 50%;
+                            font-size: $fs-25 + 1;
+
+                        }
+
+                        .counter {
+                            color: $color-black-0;
+                            margin-top: $margin-3;
+                            font-size: $fs-45 - 3;
+                            font-weight: $fw-heading-c2;
+                        }
+
+                        .count-text {
+                            color: $color-black-1;
+                            font-weight: $fw-heading-c2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video {
+    padding: $padding-48 0;
+
+    .container {
+        .video-info {
+            background: url(../../img/banner3.jpeg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: grid;
+            align-items: center;
+            min-height: 500px;
+            border-radius: $border-radius-0;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                background: rgb(16 15 19 / 66%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                min-height: 100%;
+                z-index: -1;
+                border-radius: $border-radius-0;
+            }
+
+            a.play-video {
+                text-align: center;
+                left: 0;
+                right: 0;
+                top: calc(50% - 40px);
+
+                .video-play-icon {
+                    display: inline-block;
+                    width: 80px;
+                    height: 80px;
+                    line-height: $line-height-70 + 10;
+                    font-size: $fs-25 + 1;
+                    text-align: center;
+                    background: $bg-color-0;
+                    border-radius: 50%;
+                    padding-left: $padding-0 - 10;
+                    color: $color-orange-0;
+                    border: transparent;
+                    animation: ripple 1s linear infinite;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        background: $bg-orange;
+                        border: transparent;
+                        color: $color-white-0;
+                    }
+
+                    i {}
+                }
+            }
+        }
+    }
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}

@@ -1,0 +1,95 @@
+.team {
+    padding-bottom: $padding-48;
+
+    .container {
+        padding: $padding-48 $padding-0 + 3;
+
+        .team-title {
+            text-align: center;
+            margin-bottom: $margin-50;
+
+            h3 {
+                @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+            }
+        }
+
+        .team-content {
+            .row {
+                .col-4 {
+                    .team-item {
+                        position: relative;
+
+                        &:hover {
+                            .content {
+                                h3 {
+                                    a {
+                                        @include text($color-orange-0, $fs-2, $fw-0);
+                                    }
+                                }
+                            }
+
+                            .team-contact {
+                                i {
+                                    opacity: 1;
+                                    transition: all .3s ease-in-out;
+
+                                    &:hover {
+                                        background-color: $bg-color-0;
+                                        color: $color-orange-0;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .team-thumbnail {
+                            img {
+                                width: 100%;
+                                border-radius: $border-radius-0;
+
+                            }
+                        }
+
+                        .content {
+                            text-align: center;
+                            margin-top: $margin-0;
+
+                            h3 {
+                                a {
+                                    @include text($color-black-0, $fs-2, $fw-0);
+                                    text-decoration: none;
+
+                                }
+                            }
+
+                            p {}
+                        }
+
+                        .team-contact {
+                            position: absolute;
+                            top: 290px;
+                            left: 120px;
+
+                            i {
+                                margin: 0 10px;
+                                background-color: rgba(157, 157, 157, 0.5);
+                                ;
+                                color: $color-white-0;
+                                padding: $padding-0;
+                                border-radius: $border-radius-5;
+                                opacity: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

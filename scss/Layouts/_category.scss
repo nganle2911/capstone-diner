@@ -1,0 +1,86 @@
+.category {
+    background: $bg-grey-1;
+    padding: $padding-48 0;
+
+    .container {
+        padding: $padding-48 $padding-16 - 1;
+
+        .category-title {
+            h6.font-bunny {
+                font-family: "Pacifico", cursive;
+                @include fontBunny($fs-20, $fw-heading-c1, $line-height-0 + 2, 1px, $color-orange-0);
+                margin-bottom: 0;
+            }
+
+            h3.title-level2 {
+                @include text($color-black-0, $fs-heading-c2 - 2, $fw-heading-c2);
+                line-height: $line-height-48;
+                margin-bottom: $margin-2;
+            }
+        }
+
+        .category-menu {
+            .menu-item {
+                padding: 0 $padding-16 - 1;
+
+                .item-img {
+                    position: relative;
+
+                    a {
+                        img.img-fluid {
+                            display: block;
+                            margin: 0 auto;
+                            text-align: center;
+                            width: 100%;
+                            border-radius: $border-radius-0;
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 40%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+                        border-radius: $border-radius-0;
+                    }
+                }
+
+                .item-info {
+                    position: relative;
+
+                    div {
+                        position: absolute;
+                        // background-color: yellow;
+                        bottom: 0;
+                        left: auto;
+                        width: 95%;
+                        padding: $padding-40;
+
+                        a {
+                            text-decoration: none;
+
+                            h4 {
+                                @include text($color-white-0, $fs-20 + 2, $fw-0);
+                                margin-top: $margin-0;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        h6 {
+                            margin-top: $margin-4;
+                            margin-bottom: 0;
+                            @include text($color-yellow-0, $fs-heading-c1, $fw-heading-c2);
+                            line-height: $line-height-0 - 3;
+                            opacity: 0.9;
+
+                            span {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

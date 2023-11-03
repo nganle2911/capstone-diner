@@ -1,0 +1,31 @@
+.about {
+    // margin-top: 100px;
+    padding: $padding-48 0;
+
+    .container {
+        padding: $padding-48 $padding-16 - 1;
+
+        .row {
+            .col-5 {
+                h3 {
+                    @include text($color-orange-0, $fs-heading-c1, $fw-heading-c1);
+                    font-family: 'Pacifico', cursive;
+                    letter-spacing: 1px;
+
+                }
+
+                h2 {
+                    @include text($color-black-0, $fs-heading-c2, $fw-heading-c2);
+                }
+            }
+
+            .col-7 {
+                p {
+                    @include text($color-grey-0, $fs-heading-c1, $fw-text);
+                    line-height: 28px;
+
+                }
+            }
+        }
+    }
+}
