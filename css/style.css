@@ -91,7 +91,7 @@
 }
 
 .dinerCarousel {
-  background-image: linear-gradient(to right, #ff6600, hsla(30, 100%, 1%, 0.2)), url(../img/banner1.jpeg);
+  background-image: linear-gradient(to right, #ff6600, hsla(30, 100%, 1%, 0.2)), url(../../assets/img/banner1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -154,7 +154,7 @@
   position: relative;
 }
 .resto .container-fluid .row .resto-left .photo {
-  background: url(../../img/banner3.jpeg);
+  background: url(../../assets/img/banner3.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -344,7 +344,7 @@
 }
 
 .mouth {
-  background: url(../../img/banner2.jpeg);
+  background: url(../../assets/img/banner2.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -419,7 +419,7 @@
   padding: 48px 0;
 }
 .video .container .video-info {
-  background: url(../../img/banner3.jpeg);
+  background: url(../../assets/img/banner3.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -838,7 +838,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(236, 98, 6, 0.98), rgba(5, 3, 0, 0.83)), url(../../img/banner2.jpeg);
+  background-image: linear-gradient(to right, rgba(236, 98, 6, 0.98), rgba(5, 3, 0, 0.83)), url(../../assets/img/banner2.jpeg);
   background-attachment: fixed;
   min-height: 350px;
   display: flex;
